@@ -35,6 +35,7 @@ Nice to Have
     - Pi 2B
 - Voltaic 3.4W 6V Solar Panel
 - Sixfab Cellular IoT Hat
+- Twilio SuperSIM sim card and service
 - Pi Camera v2.1
 - Zero2Go Omini Power Controller
 - Adafruit USB/DC/Solar LiPo Charger
