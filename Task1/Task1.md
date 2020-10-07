@@ -5,18 +5,18 @@
 1. Download Raspberry OS Lite and burn to the microSD card.
 2. Assemble the hats.
 3. Update locale, timezone
-3. Update Raspberry OS.
-4. Enable I2C and Serial UART (but not serial login shell)
-5. ```sudo apt install python3 python3-serial python3-rpi.gpio python3-smbus```
-6. ```sudo pip3 install sixfab-cellulariot```
-4. Install  omini software to monitor incoming voltage. (Edited to not install the web console as it apparently doesn't work with Pi Zero) [```installZero2Go.sh```](./src/installZero2Go.sh)
-7. Activate SIM
-8. ~~Activate and test modem~~   *FAIL: The AT Commands just hang*
-9. ~~Install QMI driver for CellularIoT hat from SixFab~~
-10. ~~Test QMI driver as interface~~ *FAIL: could not get IP address from DHCP*
-12. Installed PPP method of connecting using ~~```/dev/ttyAMA0```~~ ```/dev/serial0```.  *SUCCESS*
-13. Turn PPP connection on and off using ```pon``` and ```poff```.
-14. Create script to power up modem, make connection, drop connection and power down modem. [```upload_something.sh```](./src/upload_something.sh), [```modem_down.py```](./src/modem_down.py), [```modem_up.py```](./src/modem_up.py)
+4. Update Raspberry OS.
+5. Enable I2C and Serial UART (but not serial login shell)
+6. ```sudo apt install python3 python3-serial python3-rpi.gpio python3-smbus```
+7. ```sudo pip3 install sixfab-cellulariot```
+8. Install  omini software to monitor incoming voltage. (Edited to not install the web console as it apparently doesn't work with Pi Zero) [```installZero2Go.sh```](./src/installZero2Go.sh)
+9. Activate SIM
+10. ~~Activate and test modem~~   *FAIL: The AT Commands just hang*
+11. ~~Install QMI driver for CellularIoT hat from SixFab~~ *FAIL: See 12* 
+12. ~~Test QMI driver as interface~~ *FAIL: could not get IP address from DHCP*
+13. Installed PPP method of connecting using ~~```/dev/ttyAMA0```~~ ```/dev/serial0```.  *SUCCESS*
+14. Turn PPP connection on and off using ```pon``` and ```poff```.
+15. Create script to power up modem, make connection, drop connection and power down modem. [```upload_something.sh```](./src/upload_something.sh), [```modem_down.py```](./src/modem_down.py), [```modem_up.py```](./src/modem_up.py)
 
 ## Notes
 - Public Service Announcement:  when flashing a image to removeable media with the ```dd``` command, do be sure to check your paths.  My brain said ```/dev/sdc``` but my fingers typed ```/dev/sda```.  OS needed to be reloaded anyway...at least that's what I told myself.
