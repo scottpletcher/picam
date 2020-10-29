@@ -19,7 +19,7 @@ Nice to Have
 
 ## Tasks
 1. [Access the internet on the device via the cellular modem](./Task1/Task1.md)
-2. Get Pi working with AWS Greengrass IoT
+2. [Get Pi working with AWS Greengrass IoT](./Task2/Task2.md)
 3. Use Greengrass to task a picture and post to S3 with always-on connection
 4. Do #3 with periodic connection (saving battery by only connected periodically)
 5. Sustain with only solar and battery power.
